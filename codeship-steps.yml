@@ -9,8 +9,7 @@
 - name: example_tagged_step
   tag: master
   service: codeship_example
-  command: |
-          echo "Deploy here!";
-          docker network ls;
-          docker system info;
+  command: docker network ls; \
+          echo "Deploy here!"; \
+          docker system info; \
           docker system df
