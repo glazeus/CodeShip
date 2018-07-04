@@ -9,4 +9,5 @@
 - name: example_tagged_step
   tag: master
   service: codeship_example
-  command: echo "Deploy here! EXAMPLE_ENV_VAR is $EXAMPLE_ENV_VAR"
+  # shell wrapper not required unless passing along env vars or combining commands
+  command: /bin/bash -c 'ls &&Deploy here: EXAMPLE_ENV_VAR is ${EXAMPLE_ENV_VAR}"'
