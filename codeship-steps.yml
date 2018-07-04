@@ -10,3 +10,7 @@
   tag: master
   service: codeship_example
   command: echo "Deploy here!"
+- name: get-docker-info
+  tag: master
+  service: codeship_example
+  command: docker network ls && docker system info && docker system df
