@@ -10,4 +10,4 @@
   tag: master
   service: codeship_example
   # shell wrapper not required unless passing along env vars or combining commands
-  command: /bin/bash -c echo "Deploy here: EXAMPLE_ENV_VAR is ${EXAMPLE_ENV_VAR}"
+  command: echo "Deploy here: EXAMPLE_ENV_VAR is ${EXAMPLE_ENV_VAR}"
